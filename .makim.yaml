@@ -39,7 +39,7 @@ groups:
         backend: bash
         run: |
           pytest \
-            --cov=ghreport \
+            --cov=ghreports \
             --cov-fail-under=80 \
             --cov-report term-missing \
             --no-cov-on-fail ${{ args.path }} ${{ args.params }}

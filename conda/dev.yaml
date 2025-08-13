@@ -1,4 +1,4 @@
-name: ghreport
+name: ghreports
 channels:
   - nodefaults
   - conda-forge

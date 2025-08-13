@@ -1,8 +1,8 @@
-name: ghreport
+name: ghreports
 title: "GHReport Monthly Report"
 env-file: .env
 repos:
-  - osl-incubator/ghreport
+  - osl-incubator/ghreports
 authors:
   - xmnlab: Ivan Ogasawara
-output-dir: "/tmp/ghreport"
+output-dir: "/tmp/ghreports"

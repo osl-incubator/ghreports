@@ -1,6 +1,6 @@
 site_name: GHReport
-site_url: https://osl-incubator.github.io/ghreport
-repo_url: https://github.com/osl-incubator/ghreport.git
+site_url: https://osl-incubator.github.io/ghreports
+repo_url: https://github.com/osl-incubator/ghreports.git
 docs_dir: ./docs
 site_dir: ./build
 # extra_css:
@@ -140,11 +140,11 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/opensciencelabs
     - icon: fontawesome/brands/github
-      link: https://github.com/osl-incubator/ghreport.git
+      link: https://github.com/osl-incubator/ghreports.git
   support_levels:
     supported:
       icon: :material-check-decagram:{ .verified }
-      description: Tested in CI. If this doesn't work for you, please [file an issue](https://github.com/osl-incubator/ghreport.git/issues/new).
+      description: Tested in CI. If this doesn't work for you, please [file an issue](https://github.com/osl-incubator/ghreports.git/issues/new).
     bug:
       icon: :material-bug:{ .bug }
       description: Should work but doesn't because upstream is broken. Supported on a best-effort basis.

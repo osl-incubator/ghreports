@@ -14,7 +14,7 @@ from gql.transport.aiohttp import AIOHTTPTransport
 from jinja2 import Template
 from public import public
 
-from ghreport.config import ArgsCLI, Config
+from ghreports.config import ArgsCLI, Config
 
 __all__ = ['GHReportReader']
 
