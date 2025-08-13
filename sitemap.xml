@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://osl-incubator.github.io/ghreports/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://osl-incubator.github.io/ghreports/changelog/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://osl-incubator.github.io/ghreports/contributing/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://osl-incubator.github.io/ghreports/features/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://osl-incubator.github.io/ghreports/installation/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://osl-incubator.github.io/ghreports/spec/</loc>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+</urlset>
