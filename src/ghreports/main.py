@@ -5,7 +5,7 @@ Read information from Github API using GraphQL GitHubAPI.
 
 from __future__ import annotations
 
-from ghreport.cli import app
+from ghreports.cli import app
 
 
 def main() -> None:

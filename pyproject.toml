@@ -1,13 +1,13 @@
 [project]
-name = "ghreport"
+name = "ghreports"
 version = "0.1.0"  # semantic-release
 description = "GitHub Report tool"
 authors = [
   {name = "Ivan Ogasawara", email = "ivan.ogasawara@gmail.com"}
 ]
 license = "BSD 3 Clause"
-repository = "https://github.com/osl-incubator/ghreport"
-homepage = "https://github.com/osl-incubator/ghreport"
+repository = "https://github.com/osl-incubator/ghreports"
+homepage = "https://github.com/osl-incubator/ghreports"
 readme = "README.md"
 requires-python = ">=3.9,<4"
 dependencies = [
@@ -28,11 +28,11 @@ dependencies = [
 
 [tool.poetry]
 packages = [
-  {include = "ghreport", from="src"},
+  {include = "ghreports", from="src"},
 ]
 include = [
-  "src/ghreport/py.typed",
-  "src/ghreport/schema.json",
+  "src/ghreports/py.typed",
+  "src/ghreports/schema.json",
 ]
 exclude = [
   ".git/*",
@@ -45,7 +45,7 @@ build-backend = "poetry.core.masonry.api"
 
 
 [project.scripts]
-"ghreport" = "ghreport.__main__:main"
+"ghreports" = "ghreports.__main__:main"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -90,7 +90,7 @@ exclude = ["scripts/"]
 [tool.ruff]
 line-length = 79
 force-exclude = true
-src = ["./src/ghreport", "./tests"]
+src = ["./src/ghreports", "./tests"]
 exclude = [
   "docs",
 ]
@@ -122,7 +122,7 @@ quote-style = "single"
 
 [tool.bandit]
 exclude_dirs = ["tests"]
-targets = "src/ghreport/"
+targets = "src/ghreports/"
 skips = ["B102", "B701", "B507", "B601", "B603", "B105", "B307"]
 
 [tool.vulture]
@@ -131,6 +131,6 @@ ignore_decorators = []
 ignore_names = ["verbose", "dry_run", "skip_hooks"]
 make_whitelist = true
 min_confidence = 80
-paths = ["src/ghreport/"]
+paths = ["src/ghreports/"]
 sort_by_size = true
 verbose = false

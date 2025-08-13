@@ -9,8 +9,8 @@ import typer
 
 from public import public
 
-from ghreport.config import ArgsCLI
-from ghreport.report import GHReport
+from ghreports.config import ArgsCLI
+from ghreports.report import GHReport
 
 __all__ = ['app', 'main']
 
@@ -55,9 +55,9 @@ def main(
         '', '--gh-token', help='Specify the GitHub access token.'
     ),
     config_file: Path = typer.Option(
-        Path('.ghreport.yaml'),
+        Path('.ghreports.yaml'),
         '--config-file',
-        help='Path to config file; defaults to ./.ghreport.yaml',
+        help='Path to config file; defaults to ./.ghreports.yaml',
     ),
 ) -> None:
     """Run the report generation with the provided options."""

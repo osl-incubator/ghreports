@@ -12,7 +12,7 @@ Contributions can be made in various ways, outlined below:
 
 If you encounter a bug in **GHReport**, please report it via our GitHub issues
 page at:
-[https://github.com/osl-incubator/ghreport/issues](https://github.com/osl-incubator/ghreport/issues).
+[https://github.com/osl-incubator/ghreports/issues](https://github.com/osl-incubator/ghreports/issues).
 
 When reporting a bug, kindly include the following information to aid in the
 issue's resolution:
@@ -45,7 +45,7 @@ Feedback is crucial for project improvement. To submit feedback or propose a
 feature:
 
 - File an issue at
-  [https://github.com/osl-incubator/ghreport/issues](https://github.com/osl-incubator/ghreport/issues).
+  [https://github.com/osl-incubator/ghreports/issues](https://github.com/osl-incubator/ghreports/issues).
 - For feature proposals, please provide a detailed explanation of how the
   feature would function, aim for a narrow scope to facilitate easier
   implementation, and remember, **GHReport** is a volunteer-driven project, and
@@ -126,18 +126,18 @@ other groups that align with your interests.
 
 ## Setting Up for Local Development
 
-To contribute to `ghreport`, follow these steps to set up your development
+To contribute to `ghreports`, follow these steps to set up your development
 environment:
 
-1. **Fork the Repository**: Begin by forking the `ghreport` repository on GitHub
-   to your own account.
+1. **Fork the Repository**: Begin by forking the `ghreports` repository on
+   GitHub to your own account.
 
 2. **Clone Your Fork Locally**: Clone the forked repository to your local
    machine and navigate into the project directory.
 
    ```bash
-   $ git clone git@github.com:your_username/ghreport.git
-   $ cd ghreport
+   $ git clone git@github.com:your_username/ghreports.git
+   $ cd ghreports
    ```
 
 3. **Install Dependencies**: Use `mamba` to create a Conda environment and
@@ -145,7 +145,7 @@ environment:
 
    ```bash
    $ mamba env create --file conda/dev.yaml --yes
-   $ conda activate ghreport
+   $ conda activate ghreports
    $ poetry config virtualenvs.create false
    $ poetry install
    ```
@@ -160,7 +160,7 @@ environment:
 5. **Make Changes Locally**: You are now ready to implement your changes or
    improvements.
 
-6. **Install and Use Pre-commit Hooks**: `ghreport` utilizes `pre-commit` hooks
+6. **Install and Use Pre-commit Hooks**: `ghreports` utilizes `pre-commit` hooks
    to ensure code quality. Install them locally and they will automatically run
    on each commit.
 
@@ -171,7 +171,7 @@ environment:
 
    To bypass the hooks temporarily, use `git commit` with `--no-verify`.
 
-7. **Unit Testing with `pytest`**: `ghreport` leverages `pytest` for unit
+7. **Unit Testing with `pytest`**: `ghreports` leverages `pytest` for unit
    testing, along with `pytest-cov` for coverage analysis. Run unit tests using:
 
    ```bash

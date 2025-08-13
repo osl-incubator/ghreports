@@ -8,7 +8,7 @@ import pandas as pd
 
 from jinja2 import Template
 
-from ghreport.config import Config
+from ghreports.config import Config
 
 __all__ = ['GHReportGenerator']
 
@@ -62,7 +62,9 @@ class GHReportGenerator:
         path.parent.mkdir(parents=True, exist_ok=True)
 
         args = self.config.args
-        authors_display = [next(iter(a), '') for a in self.config.authors]
+        authors_display = [
+            f'@{next(iter(a), "")}' for a in self.config.authors
+        ]
 
         content = tmpl.render(
             report_title=self.config.title or 'Report',

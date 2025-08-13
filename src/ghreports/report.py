@@ -10,9 +10,9 @@ from typing import cast
 import dotenv
 import yaml
 
-from ghreport.config import ArgsCLI, Config
-from ghreport.generator import GHReportGenerator
-from ghreport.reader import GHReportReader
+from ghreports.config import ArgsCLI, Config
+from ghreports.generator import GHReportGenerator
+from ghreports.reader import GHReportReader
 
 __all__ = ['GHReport']
 
@@ -22,7 +22,9 @@ class GHReport:
 
     def __init__(self, args: ArgsCLI) -> None:
         self.args = args
-        self.config_path = Path(args.config_file or '.ghreport.yaml').resolve()
+        self.config_path = Path(
+            args.config_file or '.ghreports.yaml'
+        ).resolve()
         self.config = self._read_config()
         self.config.gh_token = self._resolve_token()
 
